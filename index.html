@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/e0eab03280.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="img/logo/logo__1_-removebg-preview.png" class="logo" alt="">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+        <div class="header-text">
+            <p>Responsive Web Page Creator</p>
+            <h1>Hi, I'm <span>Mahin</span><br>Jen From bangladesh</h1>
+        </div>
+    </div>
+
+    <!-- about start  -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/about/abot1.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I’m a front-end developer specializing in clean,
+                         fast, and responsive landing pages using only HTML &
+                          CSS. I focus on building visually appealing and mobile-friendly 
+                          layouts that ensure a smooth user experience across all devices. 
+                          Whether you need a personal portfolio, a product landing page, 
+                          or a simple business site, I can craft it with performance and 
+                          simplicity in mind. My goal is to deliver lightweight, SEO-optimized
+                           code that loads quickly and looks great. I believe in clean design,
+                            responsive structure, and pixel-perfect execution.</p>
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick= "opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick= "opentab('experience')">Experience</p>
+                                <p class="tab-links" onclick= "opentab('education')">Education</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>Front-End Developer</span><br>UI Web Designer with HTML CSS</li>
+                                    <li><span>Graphic Designer</span><br>Creative and detail-oriented Graphic Designer specializing</li>
+                                    <li><span>Digital Marketing</span><br>Digital Marketer with expertise in social media marketing and SEO</li>
+                                </ul>
+                            </div>
+
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>2024 - 2025 Current</span><br>ACI Food LTD.</li>
+                                    <li><span>2023 - 2024 </span><br>Team lead at Signature Mind Institute</li>
+                                    <li><span>2022 - 2023</span><br>BaitsBD LTD.</li>
+                                </ul>
+                            </div>
+
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>2023 Current</span><br>CSE UYLAB Institute in Bangladesh</li>
+                                    <li><span>2021</span><br>SSC Uttara High School & Collage</li>
+                                    <li><span>2023</span><br>HSC Uttara High School & Collage</li>
+                                </ul>
+                            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- services part start  -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title"> My Services</h1>
+            <div class="services-list">
+                <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>HTML & CSS Front-End Design</h2>
+                <p>I create clean, fast, and responsive websites using HTML & CSS. Perfect for portfolios, landing pages, and business websites with pixel-perfect structure.</p>
+                <a href="#">Learn More</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-swatchbook"></i>
+                <h2>Graphic Design</h2>
+                <p>Visually stunning designs including logos, social media posts, banners, and business cards. I ensure modern, brand-focused, and creative visuals.</p>
+                <a href="#">Learn More</a>
+            </div>
+
+            <div>
+                <i class="fa-brands fa-digital-ocean"></i>
+                <h2>Digital Marketing</h2>
+                <p>Boost your online presence through targeted social media marketing, SEO, and brand strategy. I help businesses grow and reach their ideal audience.</p>
+                <a href="#">Learn More</a>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- portfolio start  -->
+     <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title"> My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="img/work/land.jpg" alt="">
+                    <div class="layer">
+                        <h3>Personal Landing Page</h3>
+                        <p>A modern, responsive landing page using only HTML and CSS. Clean layout,
+                             mobile-first design, and fast-loading.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/work/busi.jpg" alt="">
+                    <div class="layer">
+                         <h3>Business Website</h3>
+                        <p>Multi-page website for a startup with services, about,
+                             and contact form. Fully responsive and SEO-friendly.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                     </div>
+                </div>
+                <div class="work">
+                    <img class="gg" src="img/work/gr.jpg" alt="">
+                    <div class="layer">
+                        <h3>Graphic Design Portfolio</h3>
+                        <p>A clean showcase for a graphic designer, highlighting creative
+                             works with a focus on branding and visuals.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+     </div>
+
+     <!-- contact start  -->
+
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> mahiinsarker@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +880 1745001127</p>
+                    <div class="social-icon">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <a href="img/about/Mahin CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="E-mail" name="E-mail" placeholder="Your E-mail" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Mahin. Made with <i class="fa-solid fa-heart"></i> my clint</p>
+        </div>
+     </div>
+    
+    <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+
+    
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+        
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbw5vUldiGaUn0EBiLyhyLP2hBozWL4zJA4zvXPKKQkbmeASXc_WoMXLf1buG5ZX_-QE/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent Successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+</body>
+</html>
